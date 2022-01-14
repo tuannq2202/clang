@@ -27,8 +27,22 @@ void run() {
         if(option == 2) {
             function2();
         }
-        if(option == 3) printf("Day la chuc nang 3\n");
-        if(option == 4) printf("Day la chuc nang 4\n");
+        if(option == 3) {
+            function3();
+        }
+        if(option == 4) {
+            function4();
+        }
+        if(option == 5) {
+            fflush(stdin);
+            printf("[EXIT] Ban chac chan muon thoat (Y): ");
+            char ch; scanf("%c", &ch);
+            if(ch == 'y' || ch == 'Y') {
+                option = 5;
+            } else {
+                option = 0;
+            }
+        }
     } while(option != 5);
     printf("Ban da thoat chuong trinh\n");
 }
